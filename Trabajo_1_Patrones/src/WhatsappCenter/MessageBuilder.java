@@ -3,7 +3,7 @@ package WhatsappCenter;
 import java.util.HashMap;
 import java.util.Map;
 
-public class MessageBuilder {
+public class MessageBuilder implements Builder<String>{
     private String template;
     private Map<String, String> parameters = new HashMap<>();
 
@@ -17,6 +17,7 @@ public class MessageBuilder {
         return this;
     }
 
+    @Override
     public String build() {
         MessageTemplate messageTemplate = NotificationTemplateFactory.createTemplate(template);
         return messageTemplate.getFormattedMessage(parameters);
