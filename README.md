@@ -24,3 +24,6 @@ Problema:
 Se tiene la necesidad de construir mensajes complejos con múltiples parámetros de manera flexible y legible intentando evitar un código con constructores con múltiples parámetros y y así tener una posible flexibilidad en la construcción de los mensajes.
 Solución:
 Con el patrón Builder se permite construir objetos complejos paso a paso. En este caso, se utiliza para construir mensajes con diferentes parámetros de manera flexible y legible.
+
+## Diagrama de Clases
+![img.png](img.png)
